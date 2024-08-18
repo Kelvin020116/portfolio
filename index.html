@@ -4,235 +4,313 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Check out my resume website!" />
-    <meta name="author" content="Kelvin Chai" />
-    <title>Kelvin Chai's Resume</title>
-    <meta name="robots" content="index, follow">
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
-        type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Kelvin Chai - Portfolio</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.9/dist/lenis.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Russo+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z3V13RSBGK"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+        h1,
+        h2 {
+            font-family: "Russo One";
+            text-transform: uppercase;
+        }
 
-        gtag('config', 'G-Z3V13RSBGK');
-    </script>
+        html {
+            scroll-behavior: auto;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        #about p {
+            margin: 0;
+        }
+
+        #about h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        header {
+            background-image: url('assets/img/hero.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .hero-container {
+            height: 100%;
+            min-height: 80vh;
+        }
+
+        .feature {
+            width: max-content;
+            aspect-ratio: 1;
+            width: 50px;
+            display: grid;
+            place-content: center;
+
+        }
+
+        #portfolio * {
+            cursor: context-menu !important;
+        }
+    </style>
 
 </head>
+</head>
 
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <span class="d-block d-lg-none">Kelvin Chai</span>
-            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
-                    src="assets/img/profile.jpg" alt="..." /></span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
-                class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li> -->
-            </ul>
+<body>
+    <!-- Responsive navbar-->
+
+    <!-- Header-->
+    <header class="bg-dark">
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" href="#!">Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container px-5" data-aos="fade-up">
+            <div class="row gx-5 justify-content-center align-items-center hero-container">
+                <div class="col-lg-6">
+                    <div class="text-center my-5">
+                        <h1 class="display-5 fw-bolder text-white mb-2" style="letter-spacing: .075em;">Hi! I am Kelvin
+                            Chai</h1>
+                        <p class="lead text-white-50 mb-4">Passionate multimedia designer, ready to create visuals that
+                            captivate.
+
+                        </p>
+                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                            <a class="btn btn-light btn-lg px-4 me-sm-3" href="#about">About Me</a>
+                            <a class="btn btn-outline-light btn-lg px-4" href="#contact">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </nav>
-    <!-- Page Content-->
-    <div class="container-fluid p-0">
-        <!-- About-->
-        <section class="resume-section" id="about">
-            <div class="resume-section-content">
-                <h1 class="mb-0">
-                    Kelvin
-                    <span class="text-primary">Chai</span>
-                </h1>
-                <div class="subheading mb-5">
-                    Multimedia Computing Student · YPC International College ·
-                    <a href="mailto:name@email.com">kelvinchai0116@gmail.com</a>
+    </header>
+
+    <section id="about" class="py-5 px-3 px-md-5 bg-light" data-aos="fade-up">
+        <div class="container px-5 my-5">
+            <div class="row align-items-center">
+                <div class="col-lg-4 pe-3 pe-md-5 mb-4 mb-md-0">
+                    <img src="\assets\img\profile.png" alt="Kelvin Chai" class="img-fluid rounded-3 shadow">
                 </div>
-                <p class="lead mb-5">Highly motivated Multimedia Computing student with a passion for design. Skilled in
-                    photo editing, layout, and visual design principles. Eager to leverage academic knowledge and
-                    creative abilities in a professional setting.</p>
-                <div class="social-icons">
-                    <a class="social-icon" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
-                    <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
-                    <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>
+                <div class="col-lg-8 pt-md-5">
+                    <h2>About Me</h2>
+                    <p><strong>Age:</strong> 22 Years Old</p>
+                    <p><strong>Degree:</strong> Bachelor of Science in Multimedia Computing</p>
+                    <hr>
+                    <p class="my-4">
+                        As a final-year student at YPC International College, I'm on the verge of earning my
+                        <strong>Bachelor's degree in Multimedia Computing</strong>, specializing in
+                        <strong>Graphic Design</strong>. My passion lies in crafting visually stunning designs that not
+                        only catch the eye but also tell a compelling story. With a keen eye for detail and a drive to
+                        innovate, I'm eager to bring my creative vision to life in a dynamic environment. Now, I'm
+                        seeking an internship opportunity where I can turn my passion into impact, contributing fresh
+                        ideas and design excellence to your team.
+                    </p>
+
+                    <a href="mailto:kelvinchai01116@gmail.com" class="btn btn-dark d-block px-4"
+                        style="width: max-content;">Send me an email</a>
                 </div>
             </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Experience-->
-        <section class="resume-section" id="experience">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Experience</h2>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">IT Technician (Part-Time)</h3>
-                        <div class="subheading mb-3">Nation Success Sdn Bhd</div>
-                        <p>
-                            As an IT Technician specializing in printer and photocopier installation and support, my
-                            role encompasses a diverse range of responsibilities aimed at ensuring seamless printing and
-                            copying operations for customers.</p>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light" id="features" data-aos="fade-up">
+        <div class="container px-5 my-5">
+            <div class="row gx-5">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h2 class="fw-bolder mb-0">My Skillsets</h2>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row gx-5 row-cols-1 row-cols-md-2">
+                        <div class="col mb-5 h-100">
+                            <div class="feature bg-dark bg-gradient text-white rounded-3 mb-3"><i
+                                    class="bi bi-collection"></i></div>
+                            <h3 class="h5">Adobe Photoshop</h2>
+                                <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is
+                                    just a
+                                    bit more text.</p>
+                        </div>
+                        <div class="col mb-5 h-100">
+                            <div class="feature bg-dark bg-gradient text-white rounded-3 mb-3"><i
+                                    class="bi bi-building"></i></div>
+                            <h3 class="h5">Adobe Illustrator</h2>
+                                <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is
+                                    just a
+                                    bit more text.</p>
+                        </div>
+                        <div class="col mb-5 mb-md-0 h-100">
+                            <div class="feature bg-dark bg-gradient text-white rounded-3 mb-3"><i
+                                    class="bi bi-toggles2"></i></div>
+                            <h3 class="h5">Video Editing</h2>
+                                <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is
+                                    just a
+                                    bit more text.</p>
+                        </div>
+                        <div class="col h-100">
+                            <div class="feature bg-dark bg-gradient text-white rounded-3 mb-3"><i
+                                    class="bi bi-toggles2"></i></div>
+                            <h3 class="h5">Web Design</h2>
+                                <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is
+                                    just a
+                                    bit more text.</p>
+                        </div>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">December 2019 - April 2023</span></div>
                 </div>
             </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Education-->
-        <section class="resume-section" id="education">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Education</h2>
-                <div class="d-flex flex-column flex-md-row justify-content-between">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">YPC International College</h3>
-                        <div class="subheading mb-3">Degree in Multimedia Computing</div>
-                        <p></p>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-5 bg-light" data-aos="fade-up">
+        <div class="container px-5 my-5">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-8 col-xl-6">
+                    <div class="text-center mb-5">
+                        <h2 class="fw-bolder">Portfolio</h2>
+
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">October 2021 - Present</span></div>
                 </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">YPC International College</h3>
-                        <div class="subheading mb-3">Foundation in IT</div>
-                        <p>GPA: 3.8</p>
+            </div>
+            <div class="row gx-5">
+                <div class="col-lg-4 mb-5">
+                    <div class="card h-100 shadow border-0">
+                        <img class="card-img-top" src="https://dummyimage.com/600x350/ced4da/6c757d" alt="...">
+                        <div class="card-body p-4">
+                            <div class="badge bg-dark bg-gradient rounded-pill mb-2">Packaging Design</div>
+                            <a class="text-decoration-none link-dark stretched-link" href="#!">
+                                <h5 class="card-title mb-3"> Portfolio Title title</h5>
+                            </a>
+                            <p class="card-text mb-0">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
+                        </div>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">September 2020 - September 2021</span></div>
                 </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">SMK Bandar Sungai Long</h3>
-                        <p>SPM 5A</p>
+                <div class="col-lg-4 mb-5">
+                    <div class="card h-100 shadow border-0">
+                        <img class="card-img-top" src="https://dummyimage.com/600x350/ced4da/6c757d" alt="...">
+                        <div class="card-body p-4">
+                            <div class="badge bg-dark bg-gradient rounded-pill mb-2">Packaging Design</div>
+                            <a class="text-decoration-none link-dark stretched-link" href="#!">
+                                <h5 class="card-title mb-3"> Portfolio Title title</h5>
+                            </a>
+                            <p class="card-text mb-0">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
+                        </div>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">Jan 2015 - December 2019</span></div>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="card h-100 shadow border-0">
+                        <img class="card-img-top" src="https://dummyimage.com/600x350/ced4da/6c757d" alt="...">
+                        <div class="card-body p-4">
+                            <div class="badge bg-dark bg-gradient rounded-pill mb-2">Packaging Design</div>
+                            <a class="text-decoration-none link-dark stretched-link" href="#!">
+                                <h5 class="card-title mb-3"> Portfolio Title title</h5>
+                            </a>
+                            <p class="card-text mb-0">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="card h-100 shadow border-0">
+                        <img class="card-img-top" src="https://dummyimage.com/600x350/ced4da/6c757d" alt="...">
+                        <div class="card-body p-4">
+                            <div class="badge bg-dark bg-gradient rounded-pill mb-2">Packaging Design</div>
+                            <a class="text-decoration-none link-dark stretched-link" href="#!">
+                                <h5 class="card-title mb-3"> Portfolio Title title</h5>
+                            </a>
+                            <p class="card-text mb-0">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="card h-100 shadow border-0">
+                        <img class="card-img-top" src="https://dummyimage.com/600x350/ced4da/6c757d" alt="...">
+                        <div class="card-body p-4">
+                            <div class="badge bg-dark bg-gradient rounded-pill mb-2">Packaging Design</div>
+                            <a class="text-decoration-none link-dark stretched-link" href="#!">
+                                <h5 class="card-title mb-3"> Portfolio Title title</h5>
+                            </a>
+                            <p class="card-text mb-0">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="card h-100 shadow border-0">
+                        <img class="card-img-top" src="https://dummyimage.com/600x350/ced4da/6c757d" alt="...">
+                        <div class="card-body p-4">
+                            <div class="badge bg-dark bg-gradient rounded-pill mb-2">Packaging Design</div>
+                            <a class="text-decoration-none link-dark stretched-link" href="#!">
+                                <h5 class="card-title mb-3"> Portfolio Title title</h5>
+                            </a>
+                            <p class="card-text mb-0">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Skills-->
-        <section class="resume-section" id="skills">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Skills</h2>
-                <div class="subheading mb-3">Programming Languages & Tools</div>
-                <ul class="list-inline dev-icons">
-                    <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-less"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-npm"></i></li>
-                </ul>
-                <div class="subheading mb-3">Workflow</div>
-                <ul class="fa-ul mb-0">
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Mobile-First, Responsive Design
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Cross Browser Testing & Debugging
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Cross Functional Teams
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Agile Development & Scrum
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Interests-->
-        <!-- <section class="resume-section" id="interests">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Interests</h2>
-                <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid
-                    skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking,
-                    free climbing, and kayaking.</p>
-                <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television
-                    shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest
-                    technology advancements in the front-end web development world.</p>
-            </div>
-        </section>
-        <hr class="m-0" /> -->
-        <!-- Awards-->
-        <!-- <section class="resume-section" id="awards">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Awards & Certifications</h2>
-                <ul class="fa-ul mb-0">
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        Google Analytics Certified Developer
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        Mobile Web Specialist - Google Certification
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        1
-                        <sup>st</sup>
-                        Place - University of Colorado Boulder - Emerging Tech Competition 2009
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        1
-                        <sup>st</sup>
-                        Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        2
-                        <sup>nd</sup>
-                        Place - University of Colorado Boulder - Emerging Tech Competition 2008
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        1
-                        <sup>st</sup>
-                        Place - James Buchanan High School - Hackathon 2006
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        3
-                        <sup>rd</sup>
-                        Place - James Buchanan High School - Hackathon 2005
-                    </li>
-                </ul>
-            </div>
-        </section> -->
-    </div>
+
+        </div>
+    </section>
+
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
     <script src="js/scripts.js"></script>
+
+
+
+    <footer class="text-white py-3" style="background-color: #000;" data-aos="fade">
+        <section id="contact" class="py-5 text-center">
+            <div class="container">
+                <h2 class="display-5 fw-bold mb-3" style="letter-spacing: .075em;">Contact Me</h2>
+                <p>Email: <a href="mailto:kelvinchai01116@gmail.com">kelvinchai01116@gmail.com</a></p>
+            </div>
+        </section>
+        <hr>
+        <div class="container text-center">
+            <p class="mb-0">Created by Kelvin Chai</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         const lenis = new Lenis()
 
@@ -246,8 +324,34 @@
         }
 
         requestAnimationFrame(raf)
-    </script>
 
+        AOS.init();
+
+        // You can also pass an optional settings object
+        // below listed default settings
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 1000, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
 </body>
 
 </html>
