@@ -89,9 +89,10 @@
 
         }
 
-        #portfolio * {
+        #portfolio * :not(a) {
             cursor: context-menu !important;
         }
+
     </style>
 
 </head>
@@ -162,7 +163,7 @@
                     </p>
 
                     <a href="mailto:kelvinchai01116@gmail.com" class="btn btn-dark d-block px-4"
-                        style="width: max-content;">Send me an email</a>
+                        style="width: max-content;"  target="_blank">Send me an email</a>
                 </div>
             </div>
         </div>
@@ -290,7 +291,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-5">
+                <div class="col-lg-4 mb-0 mb-md-5">
                     <div class="card h-100 shadow border-0">
                         <img class="card-img-top" src="https://dummyimage.com/600x350/ced4da/6c757d" alt="...">
                         <div class="card-body p-4">
@@ -306,6 +307,9 @@
             </div>
 
         </div>
+
+        <a href="https://drive.google.com/file/d/15fqasW6M_9di410NoAXPAyIBWY0DRXVc/view?usp=sharing" class="btn btn-dark d-block px-4 mx-auto"
+        style="width: max-content;" target="_blank">View Portfolio in PDF</a>
     </section>
 
     <!-- Bootstrap core JS-->
